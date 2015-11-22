@@ -22,16 +22,6 @@ public class PowerUtils {
 			ex.printStackTrace();
 			return false;
 		}
-/*		Process process = null;
-		try {
-			if (!isBatterySaver(context)) return null;
-			process = Runtime.getRuntime().exec("su -c settings put global low_power 0");
-			BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(process.getInputStream()));
-			return bufferedReader.readLine();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		return null;*/
 	}
 
 	public static boolean enablePowersave(Context context) {
@@ -41,16 +31,6 @@ public class PowerUtils {
 			ex.printStackTrace();
 			return false;
 		}
-/*		Process process = null;
-		try {
-			if (isBatterySaver(context)) return null;
-			process = Runtime.getRuntime().exec("su -c settings put global low_power 1");
-			BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(process.getInputStream()));
-			return bufferedReader.readLine();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		return null;*/
 	}
 
 	public static boolean grantSuperuserPermission(Context context) {

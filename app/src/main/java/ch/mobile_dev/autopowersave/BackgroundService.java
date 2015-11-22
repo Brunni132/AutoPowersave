@@ -24,16 +24,8 @@ public class BackgroundService extends Service {
 			Log.d(TAG, "OnReceive");
 			if (intent.getAction().equals(Intent.ACTION_SCREEN_OFF)) {
 				Log.i(TAG, "Screen went OFF: " + PowerUtils.enablePowersave(context));
-//				Toast.makeText(context, "screen OFF", Toast.LENGTH_LONG).show();
-//			} else if (intent.getAction().equals(Intent.ACTION_SCREEN_ON)) {
 			} else if (intent.getAction().equals(Intent.ACTION_USER_PRESENT)) {
-//				try {
-//					Thread.sleep(1000);
-					Log.i(TAG, "Screen went ON: " + PowerUtils.disablePowersave(context));
-//				} catch (InterruptedException e) {
-//					e.printStackTrace();
-//				}
-//				Toast.makeText(context, "screen ON",Toast.LENGTH_LONG).show();
+				Log.i(TAG, "Screen went ON: " + PowerUtils.disablePowersave(context));
 			}
 		}
 	}
