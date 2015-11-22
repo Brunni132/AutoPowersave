@@ -1,0 +1,9 @@
+<resources>
+	<string name="app_name">AutoPowersave</string>
+
+	<string name="hello_world">Hello world!</string>
+	<string name="action_settings">Settings</string>
+
+	<string name="service_name">AutoPowersave</string>
+	<string name="service_text">This notification helps the app keep open.</string>
+</resources>
